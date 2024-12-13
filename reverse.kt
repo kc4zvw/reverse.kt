@@ -49,15 +49,15 @@ fun game_loop() {
 			print("How many shall I reverse? ")
 			howMany = readln().toInt()
 
-	    } catch (e: NumberFormatException) {
+	    	} catch (e: NumberFormatException) {
 			println("\nA string is not a valid representation of a number: ${e.message}")
 
-	    } catch (e: IllegalArgumentException) {
+	    	} catch (e: IllegalArgumentException) {
 			println("\nThe radix is not a valid radix for string to number conversion: ${e.message}")
 
-	    } finally {
+	    	} finally {
 			// break
-	    }
+	    	}
 
 		assert( howMany < 0 ) { "Assertion failed: howMany is less than zero" }
 
